@@ -1,7 +1,8 @@
 <?php
 
+use App;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CarsController;
+ 
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +15,8 @@ use App\Http\Controllers\CarsController;
 |
 */
 
-Route::get('/', function () {
-    return view('cars');
-});
+// Route::get('/', function () {
+//     return view('cars');
+// });
 
-//Route::get('/cars', CarsController::class, 'index');
+Route::resource('/', CarsController::class);
