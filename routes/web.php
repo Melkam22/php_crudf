@@ -1,6 +1,5 @@
 <?php
 
-use App;
 use Illuminate\Support\Facades\Route;
  
 
@@ -19,4 +18,4 @@ use Illuminate\Support\Facades\Route;
 //     return view('cars');
 // });
 
-Route::resource('/', CarsController::class);
+Route::resource('/cars', CarsController::class);
