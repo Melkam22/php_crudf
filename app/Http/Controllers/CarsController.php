@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Car;
+use \Illuminate\Http\Response;
 
 class CarsController extends Controller
 {
@@ -13,7 +15,9 @@ class CarsController extends Controller
      */
     public function index()
     {
-        return view('cars/home');
+       $autos = Car::all();
+      // dd($autos);
+        return view('cars.home', ['autos' => $autos]);
     }
 
     /**
@@ -23,7 +27,7 @@ class CarsController extends Controller
      */
     public function create()
     {
-        //
+     //
     }
 
     /**
