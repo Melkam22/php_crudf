@@ -16,8 +16,7 @@ class CarsController extends Controller
     public function index()
     {
        $autos = Car::all();
-      // dd($autos);
-        return view('cars.home', ['autos' => $autos]);
+       return view ('cars.home', ['autos' => $autos]);
     }
 
     /**
@@ -27,7 +26,7 @@ class CarsController extends Controller
      */
     public function create()
     {
-     //
+        return view ('cars.create');
     }
 
     /**
@@ -38,7 +37,7 @@ class CarsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         //
     }
 
     /**

@@ -10,6 +10,7 @@ use App\Http\Controllers\CarsController;
 //     return view('cars');
 // });
 
-Route::get('/cars',[CarsController::class, 'index']);
+Route::get('/',[CarsController::class, 'index']);
+Route::get('/create',[CarsController::class, 'create']);
 
 //Route::resource('/cars', CarsController::class);

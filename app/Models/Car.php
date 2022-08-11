@@ -21,11 +21,4 @@ class Car extends Model
         'description'
     ];
 
-
-//     public static function getMyData(){
-
-//         $user = Test::find();
-
-//    }
-
 }
