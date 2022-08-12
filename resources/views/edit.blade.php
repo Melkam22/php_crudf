@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/app.css" /> 
-    <title>Add Car Page</title>
+    <title>Edit Car Page</title>
 </head>
 <body class="create">
 
@@ -15,7 +15,7 @@
 
 <br/>
 
-<form method="POST" action="/cars" enctype="multipart/form-data">
+<form method="edit" action="/cars" enctype="multipart/form-data">
     <!-- {{method_field('post')}} -->
     @csrf
     <input type="text" name="model" placeholder="car model ..."/> <br/>

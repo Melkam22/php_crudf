@@ -19,12 +19,26 @@
 </nav>
 
 <!-- foreach loop -->
+ 
 @foreach($autos as $auto)
+ 
+<div class="eachAuto">
 <h2 style="margin-left: 20px;">{{$auto->model}}</h2>
- <h5 style="margin-left: 20px;">{{$auto->production_year}}</h5>
+<h5 style="margin-left: 20px;">{{$auto->production_year}}</h5>
 <h5 style="margin-left: 20px;">{{$auto->price}}</h5>
 <h5 style="margin-left: 20px;">{{$auto->description}}</h5>
+ 
+
+<!-- create edit button -->
+<div class="edit">
+    <a href="/cars/{{$auto->id}}/edit">Edit Car</a>
+</div>
+
+</div>
+
 @endforeach
+
+ 
 
 
 </body>
