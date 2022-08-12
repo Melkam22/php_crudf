@@ -15,8 +15,8 @@ class CarsController extends Controller
      */
     public function index()
     {
-       $autos = Car::all();
-       return view ('cars.home', ['autos' => $autos]);
+        $autos = Car::all();
+        return view ('cars.home', ['autos' => $autos]);
     }
 
     /**
@@ -37,7 +37,16 @@ class CarsController extends Controller
      */
     public function store(Request $request)
     {
-         //
+        $auto = new Car;
+        $auto->model = $request->input('model');
+        $auto->production_year = $request->input('production_year');
+        $auto->price = $request->input('price');
+        $auto->description = $request->input('description');
+        $auto->updated_at = new \DateTime();
+        $auto->created_at = new \DateTime();
+        $auto->save();
+
+        return redirect('/cars')->with('status', 'INSERTED');
     }
 
     /**

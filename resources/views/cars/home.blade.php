@@ -15,7 +15,7 @@
 <br/>
 
 <nav style="height: 50px; width: 100vw; background: #0c63e4; display: flex">
-    <a href="create" style="margin-top: 7px; margin-left: 10px;"> <button style="height: 34px;">Add New Car</button></a>
+    <a href="cars/create" style="margin-top: 7px; margin-left: 10px;"> <button style="height: 34px;">Add New Car</button></a>
 </nav>
 
 <!-- foreach loop -->

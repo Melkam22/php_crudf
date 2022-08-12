@@ -14,11 +14,11 @@ class CreateCarsTable extends Migration
     public function up()
     {
         Schema::create('php_cars', function (Blueprint $table) {
-            $table->increments ('id');
-            $table->string('model');
-            $table->integer('production_year');
-            $table->string('price');
-            $table->longText('description');
+            $table->increments ('id')->unique();
+            $table->string('model')->nullable();
+            $table->integer('production_year')->nullable();
+            $table->string('price')->nullable();
+            $table->string('description')->nullable();
             $table->timestamps();
         });
     }

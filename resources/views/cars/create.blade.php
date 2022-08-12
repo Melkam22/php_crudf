@@ -7,11 +7,36 @@
     <link rel="stylesheet" href="css/app.css" /> 
     <title>Add Car Page</title>
 </head>
-<body class="body">
+<body class="create">
 
 <nav style="height: 50px; width: 100vw; background: #0c63e4; display: flex">
-    <a href="/" style="margin-top: 7px; margin-left: 10px;"> <button style="height: 34px;">All Cars List</button></a>
+    <a href="/cars" style="margin-top: 7px; margin-left: 10px;"> <button style="height: 34px;">All Cars List</button></a>
 </nav>
+
+<br/>
+
+<form method="POST" action="/cars" class="form" enctype="multipart/form-data">
+    <!-- {{method_field('post')}} -->
+    @csrf
+    <input type="text" name="model" placeholder="car model ..."/>
+    <input type="number" name="production_year" placeholder="production year ..."/>
+    <input type="text" name="price" placeholder="price ..."/>
+    <input type="text" name="description" placeholder="description about the car ..."/>
+     
+    <!-- <input type="file" name="image"  /> -->
+    <button class="btn" type="submit" value="submit">Submit</button>
+</form>
+
+@if($errors->any())
+    <div>
+        @foreach($errors->all() as $error)
+            <li>
+                {{$error}}
+            </li>
+        @endforeach
+    </div>
+@endif
+
 
 </body>
 </html>
