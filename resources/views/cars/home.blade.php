@@ -31,14 +31,12 @@
 
 <!-- create edit button -->
 <div class="edit">
-    <a href="/cars/{{$auto->id}}/edit">Edit Car</a>
+    <a href="cars/{{$auto->id}}/edit">Edit Car</a>
 </div>
 
 </div>
 
 @endforeach
-
- 
 
 
 </body>

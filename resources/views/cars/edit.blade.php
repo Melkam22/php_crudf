@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/app.css" /> 
-    <title>Edit Car Page</title>
+    <title>Update Car</title>
 </head>
 <body class="create">
 
@@ -15,16 +15,19 @@
 
 <br/>
 
-<form method="edit" action="/cars" enctype="multipart/form-data">
+<form method="POST" action="/cars/{{$auto->id}}" enctype="multipart/form-data">
+    <div>
+        <h1>Update</h1>
+    </div>
     <!-- {{method_field('post')}} -->
     @csrf
-    <input type="text" name="model" placeholder="car model ..."/> <br/>
-    <input type="number" name="production_year" placeholder="production year ..."/> <br/>
-    <input type="text" name="price" placeholder="price ..."/> <br/>
-    <input type="text" name="description" placeholder="description about the car ..."/> <br/>
+    <input type="text" name="model"  value="{{$auto->model}}" /> <br/>
+    <input type="number" name="production_year" value="{{$auto->production_year}}"/> <br/>
+    <input type="text" name="price" value="{{$auto->price}}"/> <br/>
+    <input type="text" name="description" value="{{$auto->description}}"/> <br/>
      
     <!-- <input type="file" name="image"  /> -->
-    <button class="btn" type="submit" value="submit">Submit</button>
+    <button class="btn" type="submit" value="submit">Update</button>
 </form>
 
 @if($errors->any())
