@@ -81,7 +81,16 @@ class CarsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $auto = Car::where('id', $id)
+        ->update([
+            'model' => $request->input('model'),
+            'production_year' => $request->input('production_year'),
+            'price' => $request->input('price'),
+            'description' => $request->input('description'),
+        // $auto->updated_at = new \DateTime(),
+        // $auto->created_at = new \DateTime(),
+        ]);
+        return redirect('/cars')->with('status', 'INSERTED');
     }
 
     /**

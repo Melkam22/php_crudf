@@ -21,6 +21,7 @@
     </div>
     <!-- {{method_field('post')}} -->
     @csrf
+    @method('PUT')
     <input type="text" name="model"  value="{{$auto->model}}" /> <br/>
     <input type="number" name="production_year" value="{{$auto->production_year}}"/> <br/>
     <input type="text" name="price" value="{{$auto->price}}"/> <br/>
