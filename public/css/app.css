@@ -5,7 +5,13 @@
   border-bottom: 2px solid white;
 }
 
-.edit{
+.frame{
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.edit .delete{
   display: flex;
   align-items: flex-start;
 }
@@ -13,3 +19,8 @@
   text-decoration: none;
   color: white;
 } 
+
+.delete a{
+  text-decoration: none;
+  color: white;
+}

@@ -30,8 +30,18 @@
  
 
 <!-- create edit button -->
+<div class="frame">
+
 <div class="edit">
     <a href="cars/{{$auto->id}}/edit">Edit Car</a>
+</div>
+
+<form class="delete" action="cars/{{$auto->id}}" method="POST">
+    @csrf
+    @method('delete')
+    <button type="submit">Delete Car</button>
+</form>
+
 </div>
 
 </div>

@@ -18,10 +18,10 @@
 <form method="POST" action="/cars" enctype="multipart/form-data">
     <!-- {{method_field('post')}} -->
     @csrf
-    <input type="text" name="model" placeholder="car model ..."/> <br/>
-    <input type="number" name="production_year" placeholder="production year ..."/> <br/>
-    <input type="text" name="price" placeholder="price ..."/> <br/>
-    <input type="text" name="description" placeholder="description about the car ..."/> <br/>
+    <input type="text" name="model" placeholder="car model ..." required/> <br/>
+    <input type="number" name="production_year" placeholder="production year ..." required/> <br/>
+    <input type="text" name="price" placeholder="price ..." required/> <br/>
+    <input type="text" name="description" placeholder="description about the car ..." required/> <br/>
      
     <!-- <input type="file" name="image"  /> -->
     <button class="btn" type="submit" value="submit">Submit</button>

@@ -14,10 +14,6 @@ use Illuminate\Support\Facades\Route;
 Route::resource('/cars', CarsController::class);//['except' => ['create', 'edit']]
 Route::resource('/create', CarsController::class);
 Route::resource('/edit/{id}', CarsController::class);
-//Route::get('/create', [CarsController::class, 'submit']);
-
-//Route::get('/', [CarsController::class, 'index']);
-//Route::post('/create', [CarsController::class, 'create']);
 
  
 

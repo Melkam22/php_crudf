@@ -68,7 +68,7 @@ class CarsController extends Controller
      */
     public function edit($id)
     {
-        $auto = Car::find($id)->first();
+        $auto = Car::find($id);//->first()
         return view ('cars.edit')->with('auto', $auto);
     }
 
@@ -101,6 +101,9 @@ class CarsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $auto = Car::find($id);
+        $auto->delete($id);
+
+        return redirect('/cars');
     }
 }
