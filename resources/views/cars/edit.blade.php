@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/app.css" /> 
     <title>Update Car</title>
 </head>
-<body class="create">
+<body class="body">
 
 <nav style="height: 50px; width: 100vw; background: #0c63e4; display: flex">
     <a href="/cars" style="margin-top: 7px; margin-left: 10px;"> <button style="height: 34px;">All Cars List</button></a>
@@ -16,9 +16,9 @@
 <br/>
 
 <form method="POST" action="/cars/{{$auto->id}}" enctype="multipart/form-data">
-    <div>
+    
         <h1>Update</h1>
-    </div>
+   
     <!-- {{method_field('post')}} -->
     @csrf
     @method('PUT')
