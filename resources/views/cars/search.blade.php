@@ -14,22 +14,19 @@
 
 <br/>
 
-<!-- search bar -->
-<!-- <form action="{{url('/search')}}" type="get" style="margin-left: 20px;">
-    <input type="text" name="query" placeholder="filter by car model ...">
-    <button class="searchBtn">Filter</button>
-</form> -->
 
 
-<!-- <nav style="height: 50px; width: 100vw; background: #0c63e4; display: flex">
+
+<nav style="height: 50px; width: 100vw; background: #0c63e4; display: flex">
     <a href="cars/create" style="margin-top: 7px; margin-left: 10px;"> <button style="height: 34px;">Add New Car</button></a>
-</nav> -->
+</nav>
 
-<!-- foreach loop -->
+<!-- found result count -->
+  <h2>Result Count:  {{$autos->count()}}</h2>  
  
+  <!-- foreach loop -->
 @foreach($autos as $auto)
- <h2>Result Count:</h2>
- <p>{{$autos->count()}}</p>
+  
 <div class="eachAuto">
 <h2 style="margin-left: 20px;">{{$auto->model}}</h2>
 <h5 style="margin-left: 20px;">{{$auto->production_year}}</h5>
