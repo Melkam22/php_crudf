@@ -106,4 +106,13 @@ class CarsController extends Controller
 
         return redirect('/cars');
     }
+
+    //search function
+    public function search()
+    {
+        $searched_model = $_GET['query'];
+        $autos = Car::where('model', 'LIKE', '%'.$searched_model.'%')->get();
+
+        return view ('cars/search')->with('autos', $autos);
+    }
 }
