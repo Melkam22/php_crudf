@@ -8,17 +8,9 @@
   <title>Search Page</title>
 </head>
 <body>
-<div>
-    <h1 style="display: flex; justify-content: center; margin-top: 2%;">welcome to Cars Page</h1>
-</div>
-
-<br/>
-
-
-
 
 <nav style="height: 50px; width: 100vw; background: #0c63e4; display: flex">
-    <a href="cars/create" style="margin-top: 7px; margin-left: 10px;"> <button style="height: 34px;">Add New Car</button></a>
+    <a href="/cars" style="margin-top: 7px; margin-left: 10px;"> <button style="height: 34px;">All Cars List</button></a>
 </nav>
 
 <!-- found result count -->
