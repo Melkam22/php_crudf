@@ -25,3 +25,21 @@
   text-decoration: none;
   color: red;
 }
+
+.searchBar{
+  display: flex;
+  justify-content: center;
+}
+.searchInput{
+  width: 300px;
+  height: 30px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.searchBtn{
+  width: 100px;
+  height: 35px;
+  background: rgba(12,121,32,.5);
+  font-size: 18px;
+  border: none;
+}

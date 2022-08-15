@@ -15,10 +15,10 @@
 <br/>
 
 <!-- search bar -->
-<form action="{{url('/search')}}" type="get" style="margin-left: 20px;">
-    <input type="text" name="query" placeholder="filter by car model ...">
-    <button class="searchBtn">Filter</button>
-</form>
+<form class="searchBar" action="{{url('/search')}}" type="get" style="margin-left: 20px;">
+    <input class="searchInput" type="text" name="query" placeholder="filter by car model ...">
+    <button class="searchBtn">Filter</button>  
+</form> <br>
 
 
 <nav style="height: 50px; width: 100vw; background: #0c63e4; display: flex">

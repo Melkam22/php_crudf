@@ -22,7 +22,7 @@
 </nav>
 
 <!-- found result count -->
-  <h2>Result Count:  {{$autos->count()}}</h2>  
+  <h2 style="color: blue;">Filtered Result Count:  {{$autos->count()}}</h2>  
  
   <!-- foreach loop -->
 @foreach($autos as $auto)
