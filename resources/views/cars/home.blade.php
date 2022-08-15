@@ -59,6 +59,8 @@
 
 @endforeach
 
+<!-- to top  -->
+<a href="#top"><i style='font-size: 40px; margin-left: 3%; position: fixed; bottom: 30px;' class="bi bi-arrow-up-circle-fill"></i></a>
 
 </body>
 </html>
