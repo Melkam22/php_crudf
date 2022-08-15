@@ -16,19 +16,21 @@
 <br/>
 
 <form method="POST" action="/cars/{{$auto->id}}" enctype="multipart/form-data">
-    
-        <h1>Update</h1>
+    <div style="width: 60%; margin-left: 20%; display: flex; flex-direction: column; align-items:center">
+    <h1>Update</h1>
    
-    <!-- {{method_field('post')}} -->
-    @csrf
-    @method('PUT')
-    <input type="text" name="model"  value="{{$auto->model}}" /> <br/>
-    <input type="number" name="production_year" value="{{$auto->production_year}}"/> <br/>
-    <input type="text" name="price" value="{{$auto->price}}"/> <br/>
-    <input type="text" name="description" value="{{$auto->description}}"/> <br/>
-     
-    <!-- <input type="file" name="image"  /> -->
-    <button class="btn" type="submit" value="submit">Update</button>
+   <!-- {{method_field('post')}} -->
+   @csrf
+   @method('PUT')
+   <input type="text" name="model"  value="{{$auto->model}}" style="width: 300px; height: 35px"/> <br/>
+   <input type="number" name="production_year" value="{{$auto->production_year}}" style="width: 300px; height: 35px"/> <br/>
+   <input type="text" name="price" value="{{$auto->price}}" style="width: 300px; height: 35px"/> <br/>
+   <input type="text" name="description" value="{{$auto->description}}" style="width: 300px; height: 35px"/> <br/>
+    
+   <!-- <input type="file" name="image"  /> -->
+   <button class="btn" type="submit" value="submit" style="width: 300px; margin-top: 4px; height: 50px; background: rgba(12,121,32,.5); border: none; font-size: 18px;">Update</button>
+    </div>
+         
 </form>
 
 @if($errors->any())

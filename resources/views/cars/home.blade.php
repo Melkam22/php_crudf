@@ -11,7 +11,7 @@
 </head>
 <body class="body">
 <div>
-    <h1 style="display: flex; justify-content: center; margin-top: 2%;">welcome to Cars Page</h1>
+    <h1 style="display: flex; justify-content: center; margin-top: 2%;">welcome to <i class="bi bi-car-front" style="margin-left: 7px; margin-right: 7px;"></i> Page</h1>
 </div>
 
 <br/>
@@ -37,7 +37,7 @@
 <h2 style="margin-left: 20px;">{{$auto->model}}</h2>
 <h4 style="margin-left: 20px;">{{$auto->production_year}}</h4>
 <h4 style="margin-left: 20px;">{{$auto->price}}</h4>
-<h4 style="margin-left: 20px;">{{$auto->description}}</h4>
+<p style="margin-left: 20px;">{{$auto->description}}</p>
  
 
 <!-- create edit button -->

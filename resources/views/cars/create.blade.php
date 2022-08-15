@@ -26,7 +26,7 @@
     <input type="text" name="description" placeholder="description about the car" required style="width: 300px; margin-top: 2px; height: 35px"/> <br/>
      
     <!-- <input type="file" name="image"  /> -->
-    <button class="btn" type="submit" value="submit" style="width: 300px; margin-top: 4px; height: 50px">Submit</button>
+    <button class="btn" type="submit" value="submit" style="width: 300px; margin-top: 4px; height: 50px; background: rgba(12,121,32,.5); border: none; font-size: 18px;">Submit</button>
 
     </div>
 </form>

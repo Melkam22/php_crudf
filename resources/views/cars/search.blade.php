@@ -10,7 +10,7 @@
 <body>
 
 <nav style="height: 50px; width: 100vw; background: #0c63e4; display: flex">
-    <a href="/cars" style="margin-top: 7px; margin-left: 10px;"> <button style="height: 34px;">All Cars List</button></a>
+    <a href="/cars" style="margin-top: 7px; margin-left: 10px;"> <button style="height: 34px;">All <i class="bi bi-car-front" style="margin-left: 7px;"> List</button></a>
 </nav>
 
 <!-- found result count -->
