@@ -11,7 +11,7 @@
 </head>
 <body class="body">
 <div>
-    <h1 style="display: flex; justify-content: center; margin-top: 2%;">welcome to <i class="bi bi-car-front" style="margin-left: 7px; margin-right: 7px;"></i> Page</h1>
+    <h1 style="display: flex; justify-content: center; margin-top: 2%;">Welcome to <i class="bi bi-car-front" style="margin-left: 7px; margin-right: 7px;color: green;"></i> Page</h1>
 </div>
 
 <br/>
@@ -25,7 +25,7 @@
 
 <!-- create car btn -->
 <div style="height: 50px; width: 100vw; background: #0c63e4; display: flex">
-    <a href="/cars/create" style="margin-top: 7px; margin-left: 10px;"> <button style="height: 34px; border: none">Add <i class="bi bi-car-front" style="margin-left: 7px;"></i></button></a>
+    <a href="/cars/create" style="margin-top: 7px; margin-left: 10px;"> <button style="height: 34px; border: none">Add <i class="bi bi-car-front" style="margin-left: 7px; color: green; font-size: 22px;"></i></button></a>
 </div>
 
 
