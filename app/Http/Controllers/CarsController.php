@@ -40,7 +40,7 @@ class CarsController extends Controller
     {
 
         $request->validated();
-        
+
         $auto = new Car;
         $auto->model = $request->input('model');
         $auto->production_year = $request->input('production_year');
@@ -83,8 +83,10 @@ class CarsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(CarValidationRequest $request, $id)
     {
+        $request->validated();
+
         $auto = Car::where('id', $id)
         ->update([
             'model' => $request->input('model'),
