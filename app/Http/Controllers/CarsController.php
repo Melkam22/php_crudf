@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Car;
 use \Illuminate\Http\Response;
+use App\Http\Requests\CarValidationRequest;
 
 class CarsController extends Controller
 {
@@ -35,8 +36,11 @@ class CarsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CarValidationRequest $request)
     {
+
+        $request->validated();
+        
         $auto = new Car;
         $auto->model = $request->input('model');
         $auto->production_year = $request->input('production_year');

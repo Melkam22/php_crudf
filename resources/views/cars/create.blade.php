@@ -20,10 +20,10 @@
     <h1>Create Car</h1>
     
     @csrf
-    <input type="text" name="model" placeholder="car model ..." required style="width: 300px; height: 35px"/> <br/>
-    <input type="number" name="production_year" placeholder="production year" required style="width: 300px; margin-top: 2px; height: 35px"/> <br/>
-    <input type="text" name="price" placeholder="price" required style="width: 300px; margin-top: 2px; height: 35px"/> <br/>
-    <input type="text" name="description" placeholder="description about the car" required style="width: 300px; margin-top: 2px; height: 35px"/> <br/>
+    <input type="text" name="model" placeholder="car model ..." style="width: 300px; height: 35px"/> <br/>
+    <input type="number" name="production_year" placeholder="production year" style="width: 300px; margin-top: 2px; height: 35px"/> <br/>
+    <input type="text" name="price" placeholder="price" style="width: 300px; margin-top: 2px; height: 35px"/> <br/>
+    <input type="text" name="description" placeholder="description about the car" style="width: 300px; margin-top: 2px; height: 35px"/> <br/>
      
     <!-- <input type="file" name="image"  /> -->
     <button class="btn" type="submit" value="submit" style="width: 300px; margin-top: 4px; height: 50px; background: rgba(12,121,32,.5); border: none; font-size: 18px;">Submit</button>
@@ -34,7 +34,7 @@
 @if($errors->any())
     <div>
         @foreach($errors->all() as $error)
-            <li>
+            <li style="color: red; display: flex; justify-content: center; margin-top: 1%;">
                 {{$error}}
             </li>
         @endforeach
