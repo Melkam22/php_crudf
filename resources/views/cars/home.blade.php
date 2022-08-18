@@ -37,7 +37,7 @@
 <h2 style="margin-left: 20px;">{{$auto->model}}</h2>
 <h4 style="margin-left: 20px;">{{$auto->production_year}}</h4>
 <h4 style="margin-left: 20px;">{{$auto->price}}</h4>
-<p style="margin-left: 20px;">{{$auto->description}}</p>
+<p style="margin-left: 20px; padding: 0% 2% 1% 0%;">{{$auto->description}}</p>
  
 
 <!-- create edit button -->
