@@ -15,6 +15,7 @@ class Car extends Model
     public $timestamps = true;
     protected $dateFormat = ('h:m:s');
     protected $fillable = [
+        'image_path',
         'model',
         'production_year',
         'price',
