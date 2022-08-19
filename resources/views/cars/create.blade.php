@@ -20,6 +20,7 @@
     <h1>Create Car</h1>
     
     @csrf
+    <input type="file" name="image" style="width: 300px; height: 35px"/> <br/>
     <input type="text" name="model" placeholder="car model ..." style="width: 300px; height: 35px"/> <br/>
     <input type="number" name="production_year" placeholder="production year" style="width: 300px; margin-top: 2px; height: 35px"/> <br/>
     <input type="text" name="price" placeholder="price" style="width: 300px; margin-top: 2px; height: 35px"/> <br/>
