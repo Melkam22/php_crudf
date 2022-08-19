@@ -108,12 +108,19 @@ class CarsController extends Controller
     {
         $request->validated();
 
+        //image update
+    $imageName = time() . '_' . $request->model . '_' . $request->image->extension();//grab image info.
+    $request->image->move(public_path('All_Images'), $imageName);//create image path inside public folder
+
         $auto = Car::where('id', $id)
         ->update([
             'model' => $request->input('model'),
             'production_year' => $request->input('production_year'),
             'price' => $request->input('price'),
             'description' => $request->input('description'),
+            'image_path'=>$imageName,
+            'updated_at' => new \DateTime(),
+            'created_at' => new \DateTime()
         // $auto->updated_at = new \DateTime(),
         // $auto->created_at = new \DateTime(),
         ]);

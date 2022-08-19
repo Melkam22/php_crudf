@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/app.css" /> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous"></nav>
     <title>Update Car</title>
 </head>
 <body class="body">
@@ -22,6 +24,7 @@
    <!-- {{method_field('post')}} -->
    @csrf
    @method('PUT')
+   <input type="file" name="image" style="width: 300px; height: 35px"/> <br/>
    <input type="text" name="model"  value="{{$auto->model}}" style="width: 300px; height: 35px"/> <br/>
    <input type="number" name="production_year" value="{{$auto->production_year}}" style="width: 300px; height: 35px"/> <br/>
    <input type="text" name="price" value="{{$auto->price}}" style="width: 300px; height: 35px"/> <br/>
