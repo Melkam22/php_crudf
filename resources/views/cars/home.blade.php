@@ -34,6 +34,7 @@
 @foreach($autos as $auto)
  
 <div class="eachAuto">
+    <img src="{{asset('All_Images/' . $auto->image_path)}}" alt="" class="image">
 <h2 style="margin-left: 20px;">{{$auto->model}}</h2>
 <h4 style="margin-left: 20px;">{{$auto->production_year}}</h4>
 <h4 style="margin-left: 20px;">{{$auto->price}}</h4>
